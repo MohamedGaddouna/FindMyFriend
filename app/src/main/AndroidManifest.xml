@@ -32,7 +32,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB5b3doEEFOiVHTlNM-oIOIPI-vfc9_4no" />
+            android:value="add you own api key from google" />
 
         <activity
             android:name=".MapsActivity"
@@ -65,5 +65,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>
