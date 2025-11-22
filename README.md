@@ -13,5 +13,6 @@ This application helps you locate your friends in real-time and keep track of th
 - 📱 **Built with:** Android Studio using **Java**  
 - 💾 **Database:** PHPMyAdmin with XAMPP  
 - 🔑 **APIs:** Google Maps API via Google Cloud (you must use your **own API key**)  
+  - ⚠️ **Note:** Change the API key in `res → AndroidManifest.xml` before running the app  
 
 The app provides a secure and simple way to share, view, and track the real-time locations of multiple friends, with a complete history for reference.
