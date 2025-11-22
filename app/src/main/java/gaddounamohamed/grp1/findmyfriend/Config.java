@@ -7,6 +7,7 @@ public class Config {
     // URL du script PHP
     public static String URL_GetAll_Locations = "http://" + IP_Server + "/servicephp/get_all.php";
 
-    // URL pour ajouter une position (à compléter si tu as add.php)
+    // URL pour ajouter une position
     public static String URL_Add_Location = "http://" + IP_Server + "/servicephp/add_position.php";
 }
+
