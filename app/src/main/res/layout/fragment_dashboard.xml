@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5F5F5"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <!-- 🟦 Carte blanche avec ombre et coins arrondis -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/rounded_white_bg"
+        android:elevation="6dp"
+        android:gravity="center_horizontal">
+
+        <!-- 🧭 Titre -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📩 Demande de position"
+            android:textColor="#0D47A1"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 📱 Champ de numéro avec TextInputLayout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numéro de téléphone"
+            app:startIconDrawable="@android:drawable/ic_menu_call"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#2196F3"
+            app:hintTextColor="#2196F3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:text="15551234567"
+                android:textColor="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 🚀 Bouton d'envoi -->
+        <Button
+            android:id="@+id/bt_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Envoyer la demande"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2196F3"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+</LinearLayout>
